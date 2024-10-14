@@ -1,7 +1,8 @@
 # Author: Sunil Shah 
 # Description: This is HW5 for CSCI 6221
 # Date : 03/02/2020
-
+# If you get any indentation error while running this code, you can directly copy the code from this repository
+# https://github.com/Sunilshah-7/asp-class-fall-2024/blob/main/hw_5.py
 # Shape class with an abstract method to calculate area
 class Shape:
     def __init__(self):
