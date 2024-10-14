@@ -7,9 +7,10 @@ import Data.Char (isSpace)
 
 data NestedList a = Elem a | List [NestedList a] deriving (Show, Eq)
 
--- Custom reverse function
+-- Custom reverse function without using built-in reverse-related functions
 reverseList :: [a] -> [a]
-reverseList = foldl (flip (:)) []
+reverseList [] = []
+reverseList (x:xs) = reverseList xs ++ [x]
 
 -- Function to reverse a nested list
 reverseNestedList :: NestedList a -> NestedList a
